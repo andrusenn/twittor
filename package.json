@@ -1,0 +1,13 @@
+{
+    "name": "02-sw",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "http-server -o -c-1 -a localhost"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
