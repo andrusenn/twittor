@@ -1,6 +1,12 @@
 // SW -----------------
+var url = window.location.href;
+var swFile = "/twittor/sw.js";
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register("/twittor/sw.js");
+    if (url.includes("localhost")) {
+        navigator.serviceWorker.register("sw.js");
+    } else {
+        navigator.serviceWorker.register(swFile);
+    }
 }
 // Referencias de jQuery
 
